@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="4e80ae7c-864e-4ed1-b2b2-999638110b6d" />
+          <option name="name" value="DDL for MS SQL " />
+          <option name="languageId" value="TSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/Scripts/Microsoft/create-tables.sql" />
+              <option value="file://$PROJECT_DIR$/Scripts/Microsoft/create-views.sql" />
+            </array>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
