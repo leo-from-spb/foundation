@@ -1,4 +1,10 @@
+drop view if exists Essay_with_Authors
+commit
+go
+
 drop view Essay_with_3_Authors
+drop view Essay_with_2_Authors
+drop view Essay_with_1_Author
 commit
 go
 
