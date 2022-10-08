@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Microsoft — Drop All" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/Scripts/Microsoft/drop-all.sql" />
+    <script-mode>FILE</script-mode>
+    <data-source id="275ff735-dd1c-4001-bed3-d97e97180e2f" namespace="database/&quot;Foundation&quot;/schema/&quot;dbo&quot;" />
+    <method v="2" />
+  </configuration>
+</component>

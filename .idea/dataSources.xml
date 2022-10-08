@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Sanctuarium MS SQL: Foundation by Leo" single-connection="true" group="München" uuid="275ff735-dd1c-4001-bed3-d97e97180e2f">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <auto-commit>false</auto-commit>
+      <schema-control>MANUAL</schema-control>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://sanctuarium.labs.intellij.net\MiniServer:1433;database=Foundation</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
