@@ -26,3 +26,11 @@ drop rule positive
 drop rule year
 commit
 go
+
+
+drop procedure commentOnType
+drop procedure commentOnTable
+drop procedure commentOnTableColumn
+drop procedure commentOnView
+drop procedure commentOnViewColumn
+go

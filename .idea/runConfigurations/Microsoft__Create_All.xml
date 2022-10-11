@@ -1,5 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Microsoft — Create All" type="DatabaseScript">
+    <script-file value="$PROJECT_DIR$/Scripts/Microsoft/prepare-primary-procedures.sql" />
     <script-file value="$PROJECT_DIR$/Scripts/Microsoft/create-aliases.sql" />
     <script-file value="$PROJECT_DIR$/Scripts/Microsoft/create-tables.sql" />
     <script-file value="$PROJECT_DIR$/Scripts/Microsoft/create-views.sql" />

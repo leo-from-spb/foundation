@@ -9,6 +9,11 @@ create table Language
         constraint Language_ak unique
 )
 
+exec commentOnTable 'Language', 'Natural language.'
+exec commentOnTableColumn 'Language', 'Lang#', 'Two-letter ISO code of the language.'
+exec commentOnTableColumn 'Language', 'Lang_Name', 'Displayable name.'
+
+
 create table Author
 (
     Au# surr not null
@@ -24,6 +29,16 @@ create table Author
     Life_Year_L year,
     constraint Author_Life_Years_ch check (coalesce(Life_Year_F,-9999) <= coalesce(Life_Year_L,9999))
 )
+
+exec commentOnTable 'Author', 'An author of a literary work or another text.'
+exec commentOnTableColumn 'Author', 'Au#', 'Abstract author id, positive.'
+exec commentOnTableColumn 'Author', 'Name_F', 'The first name.'
+exec commentOnTableColumn 'Author', 'Name_L', 'The last name.'
+exec commentOnTableColumn 'Author', 'Name', 'Generated full name.'
+exec commentOnTableColumn 'Author', 'Lang#', 'The primary language.'
+exec commentOnTableColumn 'Author', 'Life_Year_F', 'Year of birth.'
+exec commentOnTableColumn 'Author', 'Life_Year_L', 'Year of death.'
+
 
 create table Author_Wiki_Ref
 (
@@ -44,6 +59,10 @@ create table Essay
     Authored_Year year,
     Title nvarchar(80) not null
 )
+
+exec commentOnTable 'Essay', 'A literary work (novel, story, ect.) or an article.'
+exec commentOnTableColumn 'Essay', 'Authored_Year', 'the year when it was authored or published.'
+exec commentOnTableColumn 'Essay', 'Title', 'the title.'
 
 create index Essay_Authored_Year_i on Essay (Authored_Year)
 create index Essay_Title_i on Essay (Title)
