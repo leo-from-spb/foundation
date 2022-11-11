@@ -14,9 +14,11 @@ exec commentOnTableColumn 'Language', 'Lang#', 'Two-letter ISO code of the langu
 exec commentOnTableColumn 'Language', 'Lang_Name', 'Displayable name.'
 
 
+create sequence Author_seq as surr start with 1001 no cache no cycle 
+
 create table Author
 (
-    Au# surr not null
+    Au# surr default (next value for Author_seq) not null
         constraint Author_pk primary key,
     Name_F varchar(40),
     Name_L varchar(40),
@@ -52,9 +54,11 @@ create table Author_Wiki_Ref
     constraint Author_Wiki_Ref_pk primary key (Au#, Lang#)
 )
 
+create sequence Essay_seq as surr start with 100001 cache 
+
 create table Essay
 (
-    Es# surr not null
+    Es# surr default (next value for Essay_seq) not null
         constraint Essay_pk primary key,
     Authored_Year year,
     Title nvarchar(80) not null

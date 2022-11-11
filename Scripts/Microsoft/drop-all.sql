@@ -1,3 +1,7 @@
+drop synonym if exists Essay_with_N_Authors
+commit 
+go
+
 drop view if exists Essay_with_Authors
 commit
 go
@@ -14,6 +18,11 @@ drop table Author
 drop table Essay
 drop table Language
 commit
+go
+
+drop sequence Essay_seq
+drop sequence Author_seq
+commit 
 go
 
 drop type surr

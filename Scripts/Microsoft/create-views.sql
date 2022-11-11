@@ -39,5 +39,8 @@ from Essay E
     left join A A3 on E.Es# = A3.Es# and A3.Nr = 3
 go
 
+create synonym Essay_with_N_Authors for Essay_with_3_Authors
+go
+
 commit
 go

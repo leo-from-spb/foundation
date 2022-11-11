@@ -1,4 +1,4 @@
-create trigger Language_tbi
+create trigger Language_tai
     on Language after insert
     not for replication
 as
