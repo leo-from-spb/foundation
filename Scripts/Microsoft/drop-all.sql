@@ -16,7 +16,12 @@ drop table Author_Wiki_Ref
 drop table Essay_Author
 drop table Author
 drop table Essay
+drop table Entry_Note
 drop table Language
+commit
+go
+
+drop fulltext catalog FullText_Catalog
 commit
 go
 
