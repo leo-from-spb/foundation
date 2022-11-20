@@ -5,7 +5,7 @@
       <list>
         <State>
           <option name="id" value="4e80ae7c-864e-4ed1-b2b2-999638110b6d" />
-          <option name="name" value="DDL for MS SQL " />
+          <option name="name" value="Foundation Scripts" />
           <option name="dbmsName" value="MSSQL" />
           <option name="urls">
             <array>
